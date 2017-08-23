@@ -1,0 +1,10 @@
+#tesmodul_time.py
+
+from time import time, ctime
+
+prev_time=""
+while(1):
+   the_time = ctime(time())
+   if (prev_time != the_time):
+      print "The time is:",ctime(time())
+      prev_time = the_time
